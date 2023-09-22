@@ -51,7 +51,7 @@ def register_user():
 
     return jsonify({"message": "User registered successfully"})
 
-# Tweet creation endpoint
+#Tweet creation endpoint
 @app.route('/tweet', methods=['POST'])
 def create_tweet():
     data = request.json

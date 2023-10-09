@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
  
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///twitter.db'
+app.config['SQL DATABASE_URI'] = 'sqlite:///twitter.db'
 db = SQLAlchemy(app)
 
 # Define the User model
@@ -51,7 +51,7 @@ def register_user():
     return jsonify({"message": "User registered successfully"})
 
 #Tweet creation endpoint
-@app.route('/tweet', methods=['POST'])
+@app.route('/tweet', methods=['NEW POST'])
 def create_tweet():
     data = request.json
     username = data.get('username')

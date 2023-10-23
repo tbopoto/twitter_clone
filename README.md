@@ -2,7 +2,6 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
-
 app = Flask(__name__)
 app.config['SQL DATABASE_URI'] = 'sqlite:///twitter.db'
 db = SQLAlchemy(app)

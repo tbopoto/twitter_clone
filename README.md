@@ -25,7 +25,6 @@ class Tweet(db.Model):
     text = db.Column(db.String(280))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
-
     def __init__(self, text, user_id):
         self.text = text
         self.user_id = user_id
